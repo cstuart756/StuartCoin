@@ -1,0 +1,26 @@
+services:
+  node1:
+    build: .
+    environment:
+      STC_DATA: /data/node.json
+      STC_DIFFICULTY: 3
+    ports: ["8001:8000"]
+    volumes: ["node1:/data"]
+  node2:
+    build: .
+    environment:
+      STC_DATA: /data/node.json
+      STC_DIFFICULTY: 3
+    ports: ["8002:8000"]
+    volumes: ["node2:/data"]
+  node3:
+    build: .
+    environment:
+      STC_DATA: /data/node.json
+      STC_DIFFICULTY: 3
+    ports: ["8003:8000"]
+    volumes: ["node3:/data"]
+volumes:
+  node1:
+  node2:
+  node3:

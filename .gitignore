@@ -1,0 +1,8 @@
+__pycache__/
+.pytest_cache/
+.venv/
+venv/
+.env
+data/
+explorer/node_modules/
+explorer/.next/
